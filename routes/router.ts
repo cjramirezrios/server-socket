@@ -1,7 +1,7 @@
 import {Router,Request,Response} from 'express';
 
 
-export const router=Router();
+const router=Router();
 
 router.get('/mensajes',(req:Request,res:Response)=>{
     res.json({
@@ -29,5 +29,7 @@ router.post('/mensajes/:id',(req:Request,res:Response)=>{
     });
 
 });
+
+export default router;
 
 
